@@ -9,7 +9,7 @@ router.post("/fileanalyse", upload.single('upfile'), function (req, res) {
         type: req.file.mimetype,
         size: req.file.size
     }
-    res.json(req.file);
+    res.json(resObj);
 });
 
 module.exports = router;
